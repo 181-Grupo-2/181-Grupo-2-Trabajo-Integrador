@@ -152,6 +152,61 @@ iframe{
     margin-bottom: 50px;
 }
 
+/* api */
+
+:root{
+    --color-fondo: #f5f5f5;
+    --color-card-container: #f68b8a;
+    --color-texto: #482c3d;
+    --color-border-radius: #ce5959;
+
+}
+li{
+    list-style: none;
+}
+
+.clientesSatisfechos h2{
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.list-container{
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 100px; */
+    justify-content: center;
+    align-items: center;
+    /* max-width: 100%; */
+   /*  margin: auto; */
+}
+.card-container{
+    /* margin: 0;
+    padding: 0; */
+    /* width: 100%; */
+    width: calc(25% - 10px); /* Ajusta la anchura de la tarjeta según tus necesidades */
+    margin: 20px; /* Ajusta la cantidad de espacio entre las tarjetas según tus necesidades */
+    background-color: var(--color-card-container);
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
+    color: var(--color-texto);
+    text-align: center;
+    /* max-width: 100%; */
+    /* padding: 20px; */
+}
+
+.round{
+    border: 10px solid #ce5959;
+    border-radius: 50%;
+    border-style:inset;
+    padding: 7px;
+}
+.name-container{
+    margin: 15px 0px;
+
+}
+
 footer{
     display: flex;
     padding: 10vh 5vw;
@@ -164,9 +219,9 @@ footer{
     color:var(--color-amarillo);
 }
 
-/* Vector */
-
-.pie-de-pagina .gg-twitter{
+/* vector */ /* terminar de ver lo de las redes sociales q estan desacomodadas */
+/* FOOTER ARREGLAR ESTO */
+/* .pie-de-pagina .gg-twitter{
     color: #00C5C5;
     position: absolute;
    
@@ -186,8 +241,9 @@ footer{
     right: 250px;
     top: 2077.54px;
     align-items: flex-end;
-}
-/* terminar de hacer las cards e iconos de redes ver error */
+} */
+
+
 
 
 
