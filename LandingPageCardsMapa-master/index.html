@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">                                                                        <!-- Cambio a español MPL-->
+<html lang="es"> <!-- Cambio a español MPL-->
 
 <head>
     <meta charset="UTF-8">
@@ -12,29 +12,30 @@
     <link href='https://unpkg.com/css.gg@2.0.0/icons/css/facebook.css' rel='stylesheet'>
     <link href='https://unpkg.com/css.gg@2.0.0/icons/css/twitter.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
     <title>Packy Envíos</title>
 </head>
 
 <body>
     <header>
-        <img class = "logo" src="./img/logo-grande.png" alt="Logo Packy" >                                                          <!-- Imagen del logo -->
-        <nav>     
-            <a href="#nosotros">NOSOTROS</a>                     <!-- Falta agregar una sección "nosotros". Lo piden en el TP Trataré de hacerlo mañana a la tarde-->
+        <img class="logo" src="./img/logo-grande.png" alt="Logo Packy"> <!-- Imagen del logo -->
+        <nav>
+            <a href="#nosotros">NOSOTROS</a>
+            <!-- Falta agregar una sección "nosotros". Lo piden en el TP Trataré de hacerlo mañana a la tarde-->
             <a href="#services">SERVICIOS</a>
             <a href="#ubicacion">SUCURSALES</a>
             <a href="#seccionClientes">CLIENTES</a>
             <a href="#footer">CONTÁCTENOS</a>
 
             <!-- Cambié los btn por <a> para darles hiperlinks -->
-   <!--          <button class="btn-nav" id = "nosotros" >NOSOTROS</button>                                
+            <!--          <button class="btn-nav" id = "nosotros" >NOSOTROS</button>                                
             <button class="btn-nav" id = "servicios">SERVICIOS</button>
             <button class="btn-nav" id = "sucursale">SUCURSALES</button>
             <button class="btn-nav" id = "clientes">CLIENTES</button>
             <button class="btn-nav" id = "contactenos">CONTÁCTENOS</button> -->
         </nav>
 
-        <button class="btn-menu">                   <!-- diseño responsivo-->
+        <button class="btn-menu"> <!-- diseño responsivo-->
             <i class="bi bi-list"></i>
         </button>
 
@@ -57,7 +58,7 @@
 
         <!-- INICIO DE LA SECCION DE CARDS -->
 
-        <section class="services" id = "services">                      <!-- Agregué id para poder hacer hiperlink en el nav -->
+        <section class="services" id="services"> <!-- Agregué id para poder hacer hiperlink en el nav -->
             <div class="service-title">
                 <h2>
                     Nuestros Servicios
@@ -85,7 +86,7 @@
         <!-- FIN SECCION CARDS -->
 
         <section>
-            <div class="seccionClientes" id = "seccionClientes">            <!-- Agregué id para poder hacer hiperlink en el nav -->
+            <div class="seccionClientes" id="seccionClientes"> <!-- Agregué id para poder hacer hiperlink en el nav -->
                 <div class="clientesSatisfechos">
                     <h2>Clientes Satisfechos</h2>
                 </div>
@@ -93,7 +94,7 @@
             </div>
         </section>
         <section>
-            <div class="ubicacion" id = "ubicacion">
+            <div class="ubicacion" id="ubicacion">
                 <h2>Buscá tu sucursal más cercana</h2>
                 <iframe src="https://www.google.com/maps/d/embed?mid=149mHsvK1vtmA1CiVmRY1TbiimUKfDaQ&ehbc=2E312F"
                     width="600" height="400"></iframe>
@@ -104,10 +105,56 @@
             </div>
 
         </section>
+        <section class="formulario">
+            <form class="formUsuarios" id="cotizacion">
+                <h2>Calcula tu costo de Envio</h2>
+                <div class="inputContainer">
+                    <label for="nombre">Ingrese el nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
+                </div>
+                <div class="inputContainer">
+                    <label for="Apellido">Ingrese el Apellido:</label>
+                    <input type="text" id="apellido" name="Apellido" placeholder="Ingrese su Apellido" required>
+                </div>
+                <div class="inputContainer">
+                    <label for="contrasena">Ingrese su email:</label>
+                    <input type="email" id="email" name="email" placeholder="Ingrese su email" required>
+                </div>
+                <div class="inputContainer">
+                    <label for="Tamaño">Ingrese Tamaño del Paquete:</label>
+
+                    <select name="tamaño" id="tamaño" required>
+                        <option disabled selected>Selecciona una opcion</option>
+                        <option value="Pequeño">Pequeño (10x10)</option>
+                        <option value="Mediano">Mediano (20x20)</option>
+                        <option value="Grande">Grande (50x50)</option>
+                        <option value="Extra Grande">Extra Grande (mas de50x50)</option>
+                    </select>
+                </div>
+                <div class="inputContainer">
+                    <label for="peso">Ingrese Peso del Paquete (kg):</label>
+                    <input type="text" id="peso" name="peso" placeholder="Ingrese Peso del paquete" required>
+                </div>
+                <div class="inputContainer">
+                    <label for="provincia">Ingrese la provincia:</label>
+                    <select name="provincia" id="provincia" required>
+                        <option disabled selected>Selecciona una opcion</option>
+                        <option value="Capital Federal">Capital Federal</option>
+                        <option value="Buenos Aires">Buenos Aires</option>
+                        <option value="Santa Cruz">Santa Cruz</option>
+                        <option value="Cordoba">Cordoba</option>
+                        <option value="Mendoza">Mendozas</option>
+                        <option value="Santa fe">Santa Fe</option>
+                    </select>
+                </div>
+                <input type="submit" value="Costo del Envio" class="btn-registrar">
+            </form>
+            <div class="usuariosRespuesta" id="usuariosRespuesta"></div>
+        </section>
     </main>
 
 
-    <footer id = "footer">                                                       <!-- Agregué id para poder hacer hiperlink en el nav -->
+    <footer id="footer"> <!-- Agregué id para poder hacer hiperlink en el nav -->
         <div class="pie-de-pagina">
             <i class="bi bi-android2"></i>
             <p>Copyright 2022 nazishedu. All rights reserved. Terms of use & privacy policy.</p>
@@ -124,7 +171,7 @@
 
 
     </footer>
-
+    <script src="./script.js"></script>
 </body>
 
 </html>
