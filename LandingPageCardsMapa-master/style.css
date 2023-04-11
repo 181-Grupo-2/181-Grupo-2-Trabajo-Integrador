@@ -83,7 +83,6 @@ html { scroll-behavior: smooth;}                                                
     background-color: var(--color-fondo);
     filter: drop-shadow(4px -4px 24px rgba(94, 71, 71, 0.25));
 } 
-
 .btn-nav:hover {
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
@@ -115,7 +114,6 @@ html { scroll-behavior: smooth;}                                                
 /* .btn-register:hover {
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
-
 .btn-login {
     padding: 12px 30px;
     background-color: var(--color-fondo);
@@ -124,14 +122,9 @@ html { scroll-behavior: smooth;}                                                
     font-size: 22px;
     filter: drop-shadow(4px -4px 24px rgba(94, 71, 71, 0.25));
 }
-
 .btn-login:hover {
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 } */
-
-main {
-    min-height: 90vh;
-}
 
 .hero {
     padding: 3vh 5vw;
@@ -139,7 +132,7 @@ main {
     align-items: center;
     justify-content: space-around;
     /* o space-around */
-    background-color: var(--color-card-container);
+    background-color: var(--color-fondo);
 }
 
 .hero .hero-title {
@@ -401,86 +394,102 @@ select {
 
 }
 
-.container {
-    max-width: 1200;
-    margin: 0 auto;
-    background-color: #CE5959;
-    }
-
-.footer {
-    padding: 10vh 5vw; 
-    background-color: var(--color-border-radius);
+footer {
+    display: flex;
+    padding: 10vh 5vw;
     justify-content: space-between;
     align-items: center;
+    background-color: var(--color-container);
 }
 
-.footer-row {
-    display: flex;
-    flex-wrap: wrap;
+.font-color-packy {
+    color: var(--color-card-container);
 }
 
-.footer-links {
-    width: 25%;
-    padding: 0 15px;
-}
-
-.footer-links h3 {
-    font-size: 20px;
-    color: rgb(28, 10, 10);
-    margin-bottom: 25px;
-    font-weight: 500;
-    padding-bottom: 10px ;
-    display: inline-block;
-}
-
-.footer-links ul li a {
-    font-size: 18px;
-    text-decoration: none;
-    color:#3D3D3D ;
-    display: block;
-    margin-bottom: 15px;
-    transition: all.3s ease;
-}  
-
-.footer-links ul li a:hover {
-    color: #F5F5F5;
-    padding-left: 6px;
-}
-
-.red-social a {
-    display: inline-block;
-    min-height: 40px;
-    width: 40px;
-    background-color: #3d3d3d;
-    margin: 0 10px 10px 0;
-    text-align: center;
-    line-height: 40px;
-    border-radius: 50%;
-    color: whitesmoke;
-    transition: all .5s ease;
-}
-
-.red-social a:hover {
-    background-color: #f68b8a;
-}
-
-.derechos {
-    display: block;
-    justify-content: space-between;
-    padding: 5px;
-    background-color: #c84444;
-    color: #F5F5F5;
-    width: 400px;
-    margin: 0 auto;
-}
-
-@media(max-width:991px) {
-    .fooster-row {
-        text-align: center;
+/* Media Query: Siempre van abajo de todo del CSS */
+@media screen and (max-width: 775px){                               /* Media Query: Creo la distancia horizontal(px) para que me esconda el nav */
+    nav{
+        display: none
     }
-
-    .footer-links {
-        width: 100%;
-        margin-bottom: 30px;
+    .btn-menu{
+        display:block;                                               /* Lo vuelve a mostrar */
     }
 }
+
+@media screen and (max-width: 952px) {
+
+    .formUsuarios {
+        width: 70%;
+
+    }
+
+    .formulario {
+        /* background-color: #F5F5F5; */
+        padding: 10px 50px 100px 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+
+
+    }
+
+    .usuariosRespuesta {
+        /* background-image: url(./delivery2.svg); */
+        /* min-height: 50vh; */
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+        font-size: 20px;
+        width: 70%;
+        /* padding: 30px; */
+        /* margin: auto; */
+
+    }
+
+    .btn-registrar {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+
+    .formUsuarios {
+        width: 90%;
+
+    }
+
+    .usuariosRespuesta {
+        width: 90%;
+    }
+
+    .btn-registrar {
+        width: 90%;
+    }
+
+}
+
+/* vector */
+/* terminar de ver lo de las redes sociales q estan desacomodadas */
+/* FOOTER ARREGLAR ESTO */
+/* .pie-de-pagina .gg-twitter{
+    color: #00C5C5;
+    position: absolute;
+   
+    align-items: flex-end;
+}
+.pie-de-pagina .gg-facebook{
+    color: #0076E2;
+    position: absolute;
+    right: 300px;
+    top: 2072.54px;
+    align-items: flex-end;
+}
+.pie-de-pagina .gg-youtube{
+    color: #E50000;
+    position: absolute;
+    right: 250px;
+    top: 2077.54px;
+    align-items: flex-end;
+} */
