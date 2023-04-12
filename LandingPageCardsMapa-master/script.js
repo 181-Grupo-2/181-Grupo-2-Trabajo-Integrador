@@ -44,7 +44,7 @@ formularioUsuarios.addEventListener('submit', (event) => {
   tamaño = document.getElementById('tamaño').value;
   peso = document.getElementById('peso').value;
   provincia = document.getElementById('provincia').value;
-  costoEnvio = peso * 730; // Cálculo del costo de envío
+  costoEnvio = peso * 750; // Cálculo del costo de envío
 
   document.getElementById('usuariosRespuesta');
 
@@ -53,3 +53,13 @@ formularioUsuarios.addEventListener('submit', (event) => {
   console.log(usuarios)
 
 });
+// Menu desplegable
+
+addEventListener("DOMContentLoaded", () => {
+  const btn_menu = document.querySelector(".btn_menu")
+  btn_menu.addEventListener("click", () => {
+    const menu_items = document.querySelector(".menu_items")
+    menu_items.classList.toggle("show")
+  })
+
+})
