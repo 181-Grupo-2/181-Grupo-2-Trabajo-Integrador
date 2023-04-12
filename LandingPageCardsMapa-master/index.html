@@ -12,25 +12,28 @@
     <link href='https://unpkg.com/css.gg@2.0.0/icons/css/facebook.css' rel='stylesheet'>
     <link href='https://unpkg.com/css.gg@2.0.0/icons/css/twitter.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
+    <script src="seguimiento.js"></script>
     <!-- <script src="script.js"></script> -->
     <title>Packy Envíos</title>
 </head>
 
 <body>
     <header>
-        <img class="logo" src="./img/logo-grande.png" alt="Logo Packy"> <!-- Imagen del logo -->
+        <img class="logo" src="img/logo-grande.png" alt="Logo Packy"> <!-- Imagen del logo -->
         <nav>
-           
+            <a href="#nosotros">NOSOTROS</a>
+            <!-- Martin podrias cambiar el nosotros por la palabra Home y que linkee al hero -->
+            <!-- Falta agregar una sección "nosotros". Lo piden en el TP Trataré de hacerlo mañana a la tarde-->
             <a href="#services">SERVICIOS</a>
-            <a href="#seccionClientes">CLIENTES</a>
-            <a href="#Nosotros">NOSOTROS</a>
             <a href="#ubicacion">SUCURSALES</a>
+            <a href="#seccionClientes">CLIENTES</a>
             <a href="#footer">CONTÁCTENOS</a>
+            <a href="#cotizacion">COTIZAR</a>
 
             <!-- Cambié los btn por <a> para darles hiperlinks -->
             <!--          <button class="btn-nav" id = "nosotros" >NOSOTROS</button>                                
             <button class="btn-nav" id = "servicios">SERVICIOS</button>
-            <button class="btn-nav" id = "sucursale">SUCURSALES</button>
+            <button class="btn-nav" id = "sucursales">SUCURSALES</button>
             <button class="btn-nav" id = "clientes">CLIENTES</button>
             <button class="btn-nav" id = "contactenos">CONTÁCTENOS</button> -->
         </nav>
@@ -44,10 +47,19 @@
         <section class="hero">
             <div class="hero-title">
                 <h1>
-                    Cada <span class="font-color-packy"> paquete</span> <br>  es importante             <!-- Ajuste de texto MPL -->
+                    Todos tus <span class="font-color-packy">Envíos</span> a un solo <span
+                        class="font-color-packy">Click</span> de distancia
                 </h1>
                 <div class="parrafo-hero">
-                    <p>Sabemos el valor de que tus paquetes lleguen a destino en tiempo, para eso estamos nosotros. Una empresa que hace más de 15 años se encarga de la seguridad tu paquetes con el cuidado e importancia que se merecen.</p>
+                    <!-- INICIO SEGUIMIENTO -->
+                    <div class="contenedorSeguimiento">
+                        <h3>Consultá el seguimiento aquí</h3>
+                        <input type="string" id="numeroSeguimiento" placeholder="Ingrese el número de seguimiento">
+                        <!-- <input type="submit" id="btnAceptar" value="Buscar"> -->
+                        <button class="btnAceptar" onClick="javascript:window.open('seguimiento.html', '_blank');">Buscar</button>
+                    </div>
+                    <!-- <p>A powerful yet simple, interactive system for storing, tracking, sharing and managing immigration
+                        documents.</p> -->
                 </div>
             </div>
             <div class="img-container">
@@ -57,28 +69,34 @@
 
         <!-- INICIO DE LA SECCION DE CARDS -->
 
-        <section class="services" id="services">            <!-- Agregué id para poder hacer hiperlink en el nav -->
+        <section class="services" id="services"> <!-- Agregué id para poder hacer hiperlink en el nav -->
             <div class="service-title">
                 <h2>
-                    Nuestros Servicios                      <!-- Ajuste de texto MPL -->
+                    Nuestros Servicios
                 </h2>
             </div>
             <div class="card-service">
                 <img src="img/services1.svg" alt="persona con paquetes">
-                <h2>Retiramos en <span class="font-color-packy">tu domicilio</span> sin cargo</h2>
-                <p>Indicanos tu dirección y nosotros nos encargamos del resto</p>
+                <h2>Frustrated With <span class="font-color-packy">Document</span> Management</h2>
+                <p>The Best Cloud Storage and File-Sharing Services for 2022 , Microsoft OneDrive.</p>
             </div>
 
             <div class="card-service">
                 <img src="img/services2.svg" alt="hombre viendo el seguimiento">
-                <h2>Seguimiento en <span class="font-color-packy">tiempo real</span> del paquete</h2>
-                <p>Todos nuestros vehículos cuentan con rastreador satelital para tu seguridad.</p>
+                <h2>Frustrated With <span class="font-color-packy">Document</span> Management</h2>
+                <p>The Best Cloud Storage and File-Sharing Services for 2022 , Microsoft OneDrive.</p>
             </div>
 
             <div class="card-service">
                 <img src="img/services3.svg" alt="atencion callcenter">
-                <h2>Soporte técnico <span class="font-color-packy">24/7</span> </h2>
-                <p>No importa el día o la hora, siempre vas a encontrar algún representante disponible listo para ayudarte</p>
+                <h2>Frustrated With <span class="font-color-packy">Document</span> Management</h2>
+                <p>The Best Cloud Storage and File-Sharing Services for 2022 , Microsoft OneDrive.</p>
+            </div>
+
+            <div class="card-service">
+                <img src="img/services4.svg" alt="pago de servicios">
+                <h2>Frustrated With <span class="font-color-packy">Document</span> Management</h2>
+                <p>The Best Cloud Storage and File-Sharing Services for 2022 , Microsoft OneDrive.</p>
             </div>
 
         </section>
@@ -92,36 +110,6 @@
                 <ul class="list-container"></ul> <!-- api -->
             </div>
         </section>
-        
-        <!--Sección NOSOTROS -->
-        <section class = "Nosotros" id = "Nosotros"> <!-- Agregué id para poder hacer hiperlink en el nav -->
-                    <div class = "TextoNosotros">
-                        <h2>Nosotros</h2>
-                    </div>
-
-                    <div class = "NosotrosContainer">
-                        <div class="card-Nosotros">
-                            <img src= "img/team-1.jpg" alt="Imagén de Wedge Antilles">
-                            <p>Wedge Antilles</p>
-                            <p>Chief executive officer</p>
-                        </div>
-                        <div class="card-Nosotros">
-                            <img src="img/team-3.jpg" alt="Imagén de Leia Organa">
-                            <p>Leia Organa</p>
-                            <p>Chief marketing officer</p>
-                        </div>
-                        <div class="card-Nosotros">
-                            <img src="img/team-2.jpg" alt="Imagén de Lando Calrissian">
-                            <p>Lando Calrissian</p>
-                            <p>Sales manager</p>
-                        </div>
-                    </div>
-
-                    <div>
-                        <ul class="list-container"></ul> <!-- api -->
-                    </div>
-        </section>
-
         <section>
             <div class="ubicacion" id="ubicacion">
                 <h2>Buscá tu sucursal más cercana</h2>
@@ -135,25 +123,27 @@
 
         </section>
         <section class="formulario">
+            <div class="tituloFormulario">
+                <h2>Cotice su costo de envío</h2>
+            </div>
             <form class="formUsuarios" id="cotizacion">
-                <h2>Calcula tu costo de Envio</h2>
                 <div class="inputContainer">
-                    <label for="nombre">Ingrese el nombre:</label>
+                    <label for="nombre">Nombre</label> <br>
                     <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
                 </div>
                 <div class="inputContainer">
-                    <label for="Apellido">Ingrese el Apellido:</label>
+                    <label for="Apellido">Apellido</label> <br>
                     <input type="text" id="apellido" name="Apellido" placeholder="Ingrese su Apellido" required>
                 </div>
                 <div class="inputContainer">
-                    <label for="contrasena">Ingrese su email:</label>
+                    <label for="contrasena">Email</label> <br>
                     <input type="email" id="email" name="email" placeholder="Ingrese su email" required>
                 </div>
                 <div class="inputContainer">
-                    <label for="Tamaño">Ingrese Tamaño del Paquete:</label>
+                    <label for="Tamaño">Elija un tamaño de paquete:</label> <br>
 
                     <select name="tamaño" id="tamaño" required>
-                        <option disabled selected>Selecciona una opcion</option>
+                        <option disabled selected>Selecciona una opción</option> <br>
                         <option value="Pequeño">Pequeño (10x10)</option>
                         <option value="Mediano">Mediano (20x20)</option>
                         <option value="Grande">Grande (50x50)</option>
@@ -161,19 +151,37 @@
                     </select>
                 </div>
                 <div class="inputContainer">
-                    <label for="peso">Ingrese Peso del Paquete (kg):</label>
+                    <label for="peso">Ingrese el peso aproximado del paquete (en kg):</label>
                     <input type="text" id="peso" name="peso" placeholder="Ingrese Peso del paquete" required>
                 </div>
                 <div class="inputContainer">
-                    <label for="provincia">Ingrese la provincia:</label>
+                    <label for="provincia">Seleccione la provincia</label>
                     <select name="provincia" id="provincia" required>
                         <option disabled selected>Selecciona una opcion</option>
-                        <option value="Capital Federal">Capital Federal</option>
                         <option value="Buenos Aires">Buenos Aires</option>
+                        <option value="Catamarca">Catamarca</option>
+                        <option value="Capital Federal">Capital Federal</option>
+                        <option value="Chaco">Chaco</option>
+                        <option value="Chubut">Chubut</option>
+                        <option value="Córdoba">Córdoba</option>
+                        <option value="Corrientes">Corrientes</option>
+                        <option value="Entre Ríos">Entre Ríos</option>
+                        <option value="Formosa">Formosa</option>
+                        <option value="Jujuy">Jujuy</option>
+                        <option value="La Pampa">La Pampa</option>
+                        <option value="La Rioja">La Rioja</option>
+                        <option value="Mendoza">Mendoza</option>
+                        <option value="Misiones">Misiones</option>
+                        <option value="Neuquén">Neuquén</option>
+                        <option value="Río Negro">Río Negro</option>
+                        <option value="Salta">Salta</option>
+                        <option value="San Juan">San Juan</option>
+                        <option value="San Luis">San Luis</option>
                         <option value="Santa Cruz">Santa Cruz</option>
-                        <option value="Cordoba">Cordoba</option>
-                        <option value="Mendoza">Mendozas</option>
-                        <option value="Santa fe">Santa Fe</option>
+                        <option value="Santa Fe">Santa Fe</option>
+                        <option value="Santiago del Estero">Santiago del Estero</option>
+                        <option value="Tierra del Fuego">Tierra del Fuego</option>
+                        <option value="Tucumán">Tucumán</option>
                     </select>
                 </div>
                 <input type="submit" value="Costo del Envio" class="btn-registrar">

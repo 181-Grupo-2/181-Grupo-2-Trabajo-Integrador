@@ -48,7 +48,7 @@ formularioUsuarios.addEventListener('submit', (event) => {
 
   document.getElementById('usuariosRespuesta');
 
-    usuariosRespuesta.textContent = ` Hola ${nombre} ${apellido}, Muchas gracias por tu consulta, el costo de envío de un paquete ${tamaño} que pesa ${peso} Kilogramos y se enviará a ${provincia} es de $${costoEnvio}.`;
+    usuariosRespuesta.textContent = ` Hola ${nombre} ${apellido}, muchas gracias por tu consulta, el costo de envío de un paquete ${tamaño} que pesa ${peso} kilogramos y se enviará a ${provincia} es de $${costoEnvio}.`;
 
   console.log(usuarios)
 
