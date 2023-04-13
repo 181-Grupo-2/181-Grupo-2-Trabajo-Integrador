@@ -292,8 +292,6 @@ input[type="submit"]:hover {
     transition: 0.4s ease-out;
 }
 
-/* arreglar el hover */
-
 .card-service:hover {
     transform: scale(1.03);
 }
@@ -303,7 +301,6 @@ input[type="submit"]:hover {
     height: 155px;
     display: block;
     margin: auto;
-
 }
 
 .card-service h2 {
@@ -480,13 +477,14 @@ select {
     justify-content: center;
     align-items: center;
     font-weight: bold;
-    font-family: "poppins";
+    font-family:"Poppins";
     padding: 30px;
     margin-top: 100px;
+    text-align:center;
 }
 /* Footer */
 footer {
-    display: flexbox;
+    display: flex;
     padding: 1.5vh 0.5vw;
     justify-content: space-between;
     align-items: center;
@@ -529,33 +527,34 @@ footer {
 }  
 
 .footer-links ul li a:hover {
-    color: #F5F5F5;
+    color: var(--color-fondo);
     padding-left: 6px;
 }
 
 .red-social a {
     display: inline-block;
     min-height: 30px;
-    width: 40px;
-    background-color: #3d3d3d;
+    width: 50px;
+    background-color: var(--parrafos);
     margin: 0 10px 10px 0;
     text-align: center;
     line-height: 30px;
     border-radius: 50%;
-    color: whitesmoke;
+    color: var(--color-container);
     transition: all .5s ease;
 }
 
 .red-social a:hover {
-    background-color: #f68b8a;
+    background-color: var(--color-card-container);
+    color: var(--color-texto);
 }
 
 .derechos {
     padding: 5px;
     text-align: center;
-    background-color: #DBC8C8;
-    color: #3d3d3d;
-   font-size: 15px;
+    background-color: var(--color-background-lp);
+    color: var(--parrafos);
+    font-size: 15px;
 }
 
 @media(max-width:991px) {
@@ -669,14 +668,13 @@ footer {
 } */
 
 /* ESTILOS DE LA PAGINA DE SEGUIMIENTO */
-
+/* timeline:linea de tiempo */
 .timeline {
     position: relative;
     max-width: 1200px;
     margin: 0 auto;
     padding-top: 30px;
 }
-
 .timeline::after {
     content: '';
     position: absolute;
@@ -687,15 +685,12 @@ footer {
     left: 50%;
     margin-left: -3px;
 }
-
 .side {
     padding: 10px 40px;
     position: relative;
     background-color: inherit;
     width: 50%;
 }
-
-
 .side::after {
     content: '';
     position: absolute;
@@ -708,17 +703,12 @@ footer {
     border-radius: 50%;
     z-index: 1;
 }
-
 .left {
     left: 0;
 }
-
-
 .right {
     left: 50%;
 }
-
-
 .left::before {
     content: " ";
     height: 0;
@@ -731,8 +721,6 @@ footer {
     border-width: 10px 0 10px 10px;
     border-color: transparent transparent transparent var(--complementario-packy);
 }
-
-
 .right::before {
     content: " ";
     height: 0;
@@ -745,13 +733,9 @@ footer {
     border-width: 10px 10px 10px 0;
     border-color: transparent var(--color-border-radius) transparent transparent;
 }
-
-
 .right::after {
     left: -16px;
 }
-
-
 .contenido {
     padding: 20px 30px;
     background-color: var(--color-container);

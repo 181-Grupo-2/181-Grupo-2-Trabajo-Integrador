@@ -14,6 +14,4 @@ btnAceptar.addEventListener('click', function() {
 });
 
 
-
-
 /* ver  */
