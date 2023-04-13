@@ -7,10 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"> -->
-    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/attribution.css' rel='stylesheet'>
-    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/youtube.css' rel='stylesheet'>
-    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/facebook.css' rel='stylesheet'>
-    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/twitter.css' rel='stylesheet'>
+    <!-- Agregue nueva biblioteca de iconos y borre las anteriores -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="seguimiento.js"></script>
     <!-- <script src="script.js"></script> -->
@@ -194,20 +192,61 @@
 
     <footer id="footer"> <!-- Agregué id para poder hacer hiperlink en el nav -->
         <div class="pie-de-pagina">
-            <i class="bi bi-android2"></i>
-            <p>Copyright 2022 nazishedu. All rights reserved. Terms of use & privacy policy.</p>
-            <div>
-                <h3>Follow Us</h3>
-                <div>
-                    <i class="gg-facebook"></i>
-                    <i class="gg-youtube"></i>
-                    <i class="gg-twitter"></i>
+            <div class="footer-row">
+
+                <div class="footer-links">
+
+                    <h3>NOSOTROS</h3>
+                    <ul>
+                        <li><a href="#">Servicios</a></li>
+                        <li><a href="#">Recursos humanos</a></li>
+                        <li><a href="#">Politica de privacidad</a></li>
+                        <li><a href="#">Terminos y condiciones</a></li>
+                        
+                    </ul>
+
                 </div>
-            </div>
+                <div class="footer-links">
+
+                    <h3>HERRAMIENTAS RAPIDAS</h3>
+                    <ul>
+                        <li><a href="#">Sucursales</a></li>
+                        <li><a href="#">Formas de pago</a></li>
+                        <li><a href="#">Preguntas frecuentes</a></li>
+                        <li><a href="#">Noticias</a></li>
+                    </ul>
+
+                </div>
+                <div class="footer-links">
+
+                    <h3>CONTACTO</h3>
+                    <ul>
+                        <li><a href="#">Atencion al cliente</a></li>
+                        <li><a href="#"></a>0810-123-9876</li>
+                        <li><a href="#"></a>atenciondigital@packyenvios.com</li>
+                    </ul>
+
+                </div>
+                <div class="footer-links">
+
+                    <h3>SIGUENOS</h3>
+                    <div class="red-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+
+                    </div>
+                    
+
+                </div>
+        </div>
+         <div class="derechos">
+            <p>&copy; 2023 - PackyEnvios - Todos los derechos reservados</p>
 
         </div>
 
-
+        
     </footer>
     <script src="./script.js"></script>
 </body>
