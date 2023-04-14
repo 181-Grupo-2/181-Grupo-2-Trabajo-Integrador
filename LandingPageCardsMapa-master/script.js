@@ -44,11 +44,11 @@ formularioUsuarios.addEventListener('submit', (event) => {
   tamaño = document.getElementById('tamaño').value;
   peso = document.getElementById('peso').value;
   provincia = document.getElementById('provincia').value;
-  costoEnvio = peso * 750; // Cálculo del costo de envío
+  costoEnvío = peso * 750; // Cálculo del costo de envío
 
   document.getElementById('usuariosRespuesta');
 
-    usuariosRespuesta.textContent = ` Hola ${nombre} ${apellido}, muchas gracias por tu consulta, el costo de envío de un paquete ${tamaño} que pesa ${peso} kilogramos y se enviará a ${provincia} es de $${costoEnvio}.`;
+    usuariosRespuesta.textContent = ` Hola ${nombre} ${apellido}, muchas gracias por tu consulta, el costo de envío de un paquete ${tamaño} que pesa ${peso} kilogramos y se enviará a ${provincia} es de $${costoEnvío}.`;
 
   console.log(usuarios)
 
