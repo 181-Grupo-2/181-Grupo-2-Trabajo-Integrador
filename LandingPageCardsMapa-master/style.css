@@ -57,6 +57,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     align-items: end;
+
     /*     border: blueviolet solid 5px; */
     /* Tirar harina al fantasma */
 }
@@ -503,8 +504,8 @@ footer {
 }
 
 .footer-links {
-    width: 25%;
-    padding: 50px;
+    width: auto;
+    padding: 30px;
 }
 
 .footer-links h3 {
@@ -531,9 +532,11 @@ footer {
     padding-left: 6px;
 }
 
+
 .red-social a {
-    display: inline-block;
+    display:inline-block;
     min-height: 30px;
+    justify-content: space-between;
     width: 50px;
     background-color: var(--parrafos);
     margin: 0 10px 10px 0;
